@@ -3,7 +3,7 @@ const Link = ({ href = null, text = null, target = "_blank" } = {}) => {
   if (!text) throw new Error(`Invalid 'text' provided in 'Link'`);
 
   return (
-    <a class="text-teal-600" href={href} target={target}>
+    <a class="inline-block text-teal-600" href={href} target={target}>
       {text}
     </a>
   );

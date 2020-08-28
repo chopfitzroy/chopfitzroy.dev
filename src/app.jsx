@@ -1,4 +1,5 @@
 import Link from "./components/link";
+import Social from "./components/social";
 import Profile from "./components/profile";
 
 export const App = () => {
@@ -6,6 +7,7 @@ export const App = () => {
     <>
       <div class="min-w-screen min-h-screen p-8 flex flex-col items-center justify-start  bg-gray-200">
         <Profile />
+        <Social twitch="https://www.twitch.tv/chopfitzroy" twitter="https://twitter.com/chopfitzroy" />
         <div class="max-w-screen-md p-8 rounded-md bg-white">
           <h1 class="mb-4 text-2xl">Hi I'm Otis 👋</h1>
           <p class="mb-2 leading-relaxed">
@@ -34,13 +36,14 @@ export const App = () => {
           </p>
           <p class="mb-2 leading-relaxed">
             I am in the process of starting to blog again on{" "}
-            <Link href="https://dev.to/crashybang" text="DEV" /> 🤓 and I was
+            <Link href="https://dev.to/chopfitzroy" text="DEV" /> 🤓 and I was
             formerly active on{" "}
             <Link href="https://medium.com/@crashybang" text="Medium" /> 👽.
           </p>
           <p class="mb-2 leading-relaxed">
-            If you have any questions or want to get in touch please email
-            address listed in my <Link href="https://github.com/chopfitzroy" text="GitHub bio" /> 👌.
+            If you have any questions or want to get in touch please email using
+            the address listed in my{" "}
+            <Link href="https://github.com/chopfitzroy" text="GitHub bio" /> 👌.
           </p>
         </div>
       </div>
